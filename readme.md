@@ -33,6 +33,7 @@ You can also run without flags, and the script will interactively ask for inputs
 ```bash
 python run_solution.py
 ```
+---
 
 ## 🧠 Question File Format
 
@@ -56,11 +57,13 @@ class Solution:
     def add(self, a: int, b: int) -> int:
         return a + b
 ```
+---
 
 ## 📂 Questions
-|    #    | Title |  LeetCode Link |       File Path |
-|:-------:| :------: |---------------:|----------------:|
+| #       | Title |  LeetCode Link |       File Path |
+|:--------| :------: |---------------:|----------------:|
 
+---
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
@@ -72,15 +75,18 @@ Each test case should be a dict like:
 ```
 Arguments will be unpacked as *args when calling the solution method.
 
+---
 ## 📦 Requirements
 Python 3.8 or higher\
 No external dependencies — pure standard library
 
+---
 ## 💡 Why I Made This
 I prefer running problems locally in a fast, keyboard-only dev flow.\
 This tool mimics the LeetCode experience but fully offline.\
 It lets me write, test, and refine solutions quickly without leaving my editor or terminal.
 
+---
 ## 📜 License
 MIT License\
 But again — this is a personal project, not intended as a library, SDK, or public package.
