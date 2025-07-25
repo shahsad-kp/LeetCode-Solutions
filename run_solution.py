@@ -20,7 +20,6 @@ def load_solution_class(file_number):
 
 
 def get_method(solution):
-    # Get non-dunder, non-init methods
     for name, method in inspect.getmembers(solution, predicate=inspect.ismethod):
         if not name.startswith("__") and name != '__init__':
             return name, method
@@ -42,6 +41,30 @@ def get_input_for_param(param):
             print(f"Invalid input: {e}. Please try again.")
 
 
+def run_manual(method, params):
+    args = [get_input_for_param(p) for p in params]
+    result = method(*args)
+    print(f"\nResult: {result}")
+
+
+def run_automatic(method, test_cases):
+    print(f"\nRunning {len(test_cases)} test case(s)...")
+    passed = 0
+    for idx, case in enumerate(test_cases, 1):
+        args = case.get("input", [])
+        expected = case.get("output")
+        try:
+            result = method(*args)
+            if result == expected:
+                print(f"✅ Test {idx}: Passed")
+                passed += 1
+            else:
+                print(f"❌ Test {idx}: Failed. Input: {args}, Expected: {expected}, Got: {result}")
+        except Exception as e:
+            print(f"💥 Test {idx}: Exception occurred: {e}")
+    print(f"\n{passed}/{len(test_cases)} test cases passed.")
+
+
 def main():
     file_number = input("Enter question number: ").strip()
     solution = load_solution_class(file_number)
@@ -50,11 +73,20 @@ def main():
 
     method_name, method = get_method(solution)
     params = get_arguments(method)
-    args = [get_input_for_param(p) for p in params]
 
-    print(f"\nRunning {method_name} with arguments {args}...")
-    result = method(*args)
-    print(f"Result: {result}")
+    test_cases = getattr(solution, "__test_cases__", [])
+
+    mode = input("Run in (A)utomatic or (M)anual mode? ").strip().lower()
+
+    if mode == "a":
+        if not test_cases:
+            print("⚠️  No test cases found for automatic mode.")
+        else:
+            run_automatic(method, test_cases)
+    elif mode == "m":
+        run_manual(method, params)
+    else:
+        print("Invalid mode. Choose 'A' or 'M'.")
 
 
 if __name__ == "__main__":
