@@ -7,9 +7,9 @@ import sys
 
 
 def load_solution_class(file_number):
-    file_name = f"{file_number}.py"
+    file_name = os.path.join("questions", f"{file_number}.py")
     if not os.path.exists(file_name):
-        raise FileNotFoundError(f"{file_name} not found.")
+        raise FileNotFoundError(f"{file_name} not found in 'questions/' directory.")
 
     spec = importlib.util.spec_from_file_location("solution_module", file_name)
     module = importlib.util.module_from_spec(spec)
