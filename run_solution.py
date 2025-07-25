@@ -2,6 +2,8 @@ import importlib.util
 import inspect
 import ast
 import os
+import argparse
+import sys
 
 
 def load_solution_class(file_number):
@@ -41,8 +43,11 @@ def get_input_for_param(param):
             print(f"Invalid input: {e}. Please try again.")
 
 
-def run_manual(method, params):
-    args = [get_input_for_param(p) for p in params]
+def run_manual(method, params, inputs_from_cli=None):
+    if inputs_from_cli is not None:
+        args = inputs_from_cli
+    else:
+        args = [get_input_for_param(p) for p in params]
     result = method(*args)
     print(f"\nResult: {result}")
 
@@ -65,18 +70,36 @@ def run_automatic(method, test_cases):
     print(f"\n{passed}/{len(test_cases)} test cases passed.")
 
 
-def main():
-    file_number = input("Enter question number: ").strip()
-    solution = load_solution_class(file_number)
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run solution interactively or with test cases.")
+    parser.add_argument("--question", type=str, help="Question number (e.g., 1 for 1.py)")
+    parser.add_argument("--mode", type=str, choices=["a", "m"], help="Run mode: a (auto) or m (manual)")
+    parser.add_argument("--inputs", type=str, help="Manual inputs as Python list string (e.g., \"[1, 2]\")")
+    return parser.parse_args()
 
+
+def main():
+    args = parse_args()
+
+    question_number = args.question or input("Enter question number: ").strip()
+    mode = args.mode or input("Run in (A)utomatic or (M)anual mode? ").strip().lower()
+    inputs_from_cli = None
+
+    if args.inputs:
+        try:
+            inputs_from_cli = ast.literal_eval(args.inputs)
+            if not isinstance(inputs_from_cli, list):
+                raise ValueError("Inputs must be a list.")
+        except Exception as e:
+            print(f"Error parsing inputs: {e}")
+            sys.exit(1)
+
+    solution = load_solution_class(question_number)
     print(f"\nQuestion: {getattr(solution, '__question__', 'No question description found.')}\n")
 
     method_name, method = get_method(solution)
     params = get_arguments(method)
-
     test_cases = getattr(solution, "__test_cases__", [])
-
-    mode = input("Run in (A)utomatic or (M)anual mode? ").strip().lower()
 
     if mode == "a":
         if not test_cases:
@@ -84,9 +107,9 @@ def main():
         else:
             run_automatic(method, test_cases)
     elif mode == "m":
-        run_manual(method, params)
+        run_manual(method, params, inputs_from_cli)
     else:
-        print("Invalid mode. Choose 'A' or 'M'.")
+        print("Invalid mode. Choose 'a' or 'm'.")
 
 
 if __name__ == "__main__":
