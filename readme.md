@@ -60,10 +60,9 @@ class Solution:
 ---
 
 ## 📂 Questions
-| #       | Title |  LeetCode Link |       File Path |
-|:--------| :------: |---------------:|----------------:|
 
----
+| # | Title | LeetCode Link | File Path |
+|---|-------|--------------|-----------|
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
