@@ -46,13 +46,13 @@ def update_readme():
 
         title = sol.__question__
         link = sol.__leetcode__
-        table_lines.append(f"| {qnum} | {title} | [Link]({link}) | `questions/{f}` |")
+        table_lines.append(f"| {qnum} | {title} | [Link]({link}) | `[Solutions](questions/{f})` |")
 
     with open(README_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
     new_table = "\n".join([
-        "| # | Title | LeetCode Link | File Path |",
+        "| # | Title | LeetCode Link | Solutions |",
         "|---|-------|--------------|-----------|",
         *table_lines
     ])
