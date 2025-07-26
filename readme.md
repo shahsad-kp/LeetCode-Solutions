@@ -63,6 +63,7 @@ class Solution:
 
 | # | Title | LeetCode Link | File Path |
 |---|-------|--------------|-----------|
+| 100 | Same Tree | [Link](https://leetcode.com/problems/same-tree) | `questions/100.py` |
 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | `questions/3487.py` |
 
 ## 🧪 Test Case Format
