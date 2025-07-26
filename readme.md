@@ -63,8 +63,8 @@ class Solution:
 
 | # | Title | LeetCode Link | Solutions |
 |---|-------|--------------|-----------|
-| 100 | Same Tree | [Link](https://leetcode.com/problems/same-tree) | `[Solutions](questions/100.py)` |
-| 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | `[Solutions](questions/3487.py)` |
+| 100 | Same Tree | [Link](https://leetcode.com/problems/same-tree) | [Solutions](questions/100.py) |
+| 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
