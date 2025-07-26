@@ -60,8 +60,9 @@ class Solution:
 ---
 
 ## 📂 Questions
-| #       | Title |  LeetCode Link |       File Path |
-|:--------| :------: |---------------:|----------------:|
+| #    |                    Title                    |                                         LeetCode Link                                         |           Solution            |
+|:-----|:-------------------------------------------:|:---------------------------------------------------------------------------------------------:|:-----------------------------:|
+| 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/description/) | [Solution](questions/3487.py) |
 
 ---
 
