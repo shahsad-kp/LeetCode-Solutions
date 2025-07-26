@@ -4,7 +4,7 @@ import inspect
 import re
 
 QUESTIONS_DIR = "questions"
-README_FILE = "README.md"
+README_FILE = "readme.md"
 
 def validate_question_file(filepath):
     spec = importlib.util.spec_from_file_location("module", filepath)
