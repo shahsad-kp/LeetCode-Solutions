@@ -42,6 +42,7 @@ from typing import List
 
 class Solution:
     __question__ = 'Maximum Unique Subarray Sum After Deletions'
+    __leetcode__ = 'https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion'
     __test_cases__ = [
         {
             'input': [
