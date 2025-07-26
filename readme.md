@@ -63,6 +63,7 @@ class Solution:
 
 | # | Title | LeetCode Link | File Path |
 |---|-------|--------------|-----------|
+| 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | `questions/3487.py` |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
