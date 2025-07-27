@@ -64,6 +64,7 @@ class Solution:
 | # | Title | LeetCode Link | Solutions |
 |---|-------|--------------|-----------|
 | 100 | Same Tree | [Link](https://leetcode.com/problems/same-tree) | [Solutions](questions/100.py) |
+| 101 | Symmetric Tree | [Link](https://leetcode.com/problems/symmetric-tree) | [Solutions](questions/101.py) |
 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) |
 
 ## 🧪 Test Case Format
