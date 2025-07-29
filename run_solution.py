@@ -1,3 +1,4 @@
+import copy
 import importlib.util
 import inspect
 import ast
@@ -58,13 +59,14 @@ def run_automatic(method, test_cases):
     for idx, case in enumerate(test_cases, 1):
         args = case.get("input", [])
         expected = case.get("output")
+        original_args = copy.deepcopy(args)
         try:
             result = method(*args)
             if result == expected:
                 print(f"✅ Test {idx}: Passed")
                 passed += 1
             else:
-                print(f"❌ Test {idx}: Failed. Input: {args}, Expected: {expected}, Got: {result}")
+                print(f"❌ Test {idx}: Failed. Input: {original_args}, Expected: {expected}, Got: {result}")
         except Exception as e:
             print(f"💥 Test {idx}: Exception occurred: {e}")
     print(f"\n{passed}/{len(test_cases)} test cases passed.")
