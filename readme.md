@@ -61,7 +61,7 @@ class Solution:
 
 ## 📂 Questions
 
-| # | Title | LeetCode Link | File Path |
+| # | Title | LeetCode Link | Solutions |
 |---|-------|--------------|-----------|
 
 ## 🧪 Test Case Format

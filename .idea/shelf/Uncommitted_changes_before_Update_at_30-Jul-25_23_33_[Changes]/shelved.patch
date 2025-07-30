@@ -1,0 +1,38 @@
+Index: questions/2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/questions/2.py b/questions/2.py
+new file mode 100644
+--- /dev/null	(date 1753898579156)
++++ b/questions/2.py	(date 1753898579156)
+@@ -0,0 +1,27 @@
++class Solution:
++    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
++        head = result = None
++        carier = 0
++
++        while l1 or l2:
++            sum_result = 0
++            if l1:
++                sum_result += l1.val
++                l1 = l1.next
++            if l2:
++                sum_result += l2.val
++                l2 = l2.next
++
++            sum_result += carier
++            last_digit = sum_result % 10
++            carier = sum_result // 10
++            node = ListNode(val=last_digit)
++
++            if result is None:
++                result = head = node
++            else:
++                result.next = node
++                result = result.next
++        if carier:
++            result.next = ListNode(val=carier)
++        return head
+\ No newline at end of file
