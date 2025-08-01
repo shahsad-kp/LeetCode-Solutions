@@ -73,6 +73,7 @@ class Solution:
 | 125 | Valid Palindrome | [Link](https://leetcode.com/problems/valid-palindrome) | [Solutions](questions/125.py) |
 | 136 | Single Number | [Link](https://leetcode.com/problems/single-number) | [Solutions](questions/136.py) |
 | 141 | Linked List Cycle | [Link](https://leetcode.com/problems/linked-list-cycle) | [Solutions](questions/141.py) |
+| 144 | Binary Tree Preorder Traversal | [Link](https://leetcode.com/problems/binary-tree-preorder-traversal) | [Solutions](questions/144.py) |
 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) |
 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) |
 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) |
