@@ -70,6 +70,7 @@ class Solution:
 | 112 | Path Sum | [Link](https://leetcode.com/problems/path-sum) | [Solutions](questions/112.py) |
 | 118 | Pascal's Triangle | [Link](https://leetcode.com/problems/pascals-triangle) | [Solutions](questions/118.py) |
 | 121 | Best Time to Buy and Sell Stock | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [Solutions](questions/121.py) |
+| 125 | Valid Palindrome | [Link](https://leetcode.com/problems/valid-palindrome) | [Solutions](questions/125.py) |
 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) |
 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) |
 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) |
