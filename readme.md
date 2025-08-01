@@ -66,6 +66,7 @@ class Solution:
 | 100 | Same Tree | [Link](https://leetcode.com/problems/same-tree) | [Solutions](questions/100.py) |
 | 101 | Symmetric Tree | [Link](https://leetcode.com/problems/symmetric-tree) | [Solutions](questions/101.py) |
 | 104 | Maximum Depth of Binary Tree | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Solutions](questions/104.py) |
+| 111 | Minimum Depth of Binary Tree | [Link](https://leetcode.com/problems/minimum-depth-of-binary-tree) | [Solutions](questions/111.py) |
 | 112 | Path Sum | [Link](https://leetcode.com/problems/path-sum) | [Solutions](questions/112.py) |
 | 118 | Pascal's Triangle | [Link](https://leetcode.com/problems/pascals-triangle) | [Solutions](questions/118.py) |
 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) |
