@@ -1,0 +1,44 @@
+Index: questions/108.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/questions/108.py b/questions/108.py
+new file mode 100644
+--- /dev/null	(date 1753902358642)
++++ b/questions/108.py	(date 1753902358642)
+@@ -0,0 +1,34 @@
++from typing import List, Optional
++
++class TreeNode:
++    def __init__(self, val=0, left=None, right=None):
++        self.val = val
++        self.left: 'TreeNode' = left
++        self.right: 'TreeNode' = right
++
++    def __repr__(self):
++        return f'TreeNode({self.val}, {self.left}, {self.right})'
++
++
++class Solution:
++    __question__ = 'Convert Sorted Array to Binary Search Tree'
++    __leetcode__ = 'https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree'
++    __test_cases__ = [
++        {
++            'input': [[-10,-3,0,5,9]],
++            'output': TreeNode(0, TreeNode(-3, TreeNode(-10, None, None), None), TreeNode(9, TreeNode(5, None, None), None))
++        }
++    ]
++
++    def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
++        return self.__make_node(nums, 0, len(nums) - 1)
++
++
++    def __make_node(self, nums: List[int], start: int, end: int) -> Optional[TreeNode]:
++        if start > end:
++            return None
++        mid = (start + end) // 2
++        node = TreeNode(nums[mid])
++        node.left = self.__make_node(nums, start, mid - 1)
++        node.right = self.__make_node(nums, mid + 1, end)
++        return node

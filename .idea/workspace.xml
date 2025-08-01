@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3222b12f-8a84-4d33-9cf8-1401ec1618a7" name="Changes" comment="#9" />
+    <list default="true" id="3222b12f-8a84-4d33-9cf8-1401ec1618a7" name="Changes" comment="#118">
+      <change afterPath="$PROJECT_DIR$/questions/111.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +105,8 @@
       <list>
         <item itemvalue="Python.validate_questions" />
         <item itemvalue="Python.run_solution" />
+        <item itemvalue="Python.validate_questions" />
+        <item itemvalue="Python.run_solution" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +135,7 @@
       <updated>1753807687560</updated>
       <workItem from="1753807687561" duration="880000" />
       <workItem from="1753893272185" duration="3936000" />
+      <workItem from="1753984410399" duration="6643000" />
     </task>
     <task id="LOCAL-00002" summary="#88">
       <option name="closed" value="true" />
@@ -164,11 +169,38 @@
       <option name="project" value="LOCAL" />
       <updated>1753898885505</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#112">
+      <option name="closed" value="true" />
+      <created>1753985722745</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1753985722745</updated>
+    </task>
+    <task id="LOCAL-00007" summary="#118">
+      <option name="closed" value="true" />
+      <created>1754013092980</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754013092980</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#101" />
@@ -176,9 +208,29 @@
     <MESSAGE value="#104" />
     <MESSAGE value="#2" />
     <MESSAGE value="#9" />
-    <option name="LAST_COMMIT_MESSAGE" value="#9" />
+    <MESSAGE value="#112" />
+    <MESSAGE value="#118" />
+    <option name="LAST_COMMIT_MESSAGE" value="#118" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/validate_questions.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="diff.a_path" />
+        <watch expression="diff.a_path == 'A'" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LeetCode___Solutions$run_solution.coverage" NAME="run_solution Coverage Results" MODIFIED="1753901932664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode___Solutions$run_solution.coverage" NAME="run_solution Coverage Results" MODIFIED="1754061510626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode___Solutions$validate_questions.coverage" NAME="validate_questions Coverage Results" MODIFIED="1754019130158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
