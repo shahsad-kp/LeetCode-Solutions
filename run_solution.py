@@ -23,14 +23,15 @@ def load_solution_class(file_number):
 
 
 def get_method(solution):
-    class_name = solution.__class__.__name__
-    for name, method in inspect.getmembers(solution, predicate=inspect.ismethod):
-        if name.startswith('__') and name.endswith('__'):
-            continue
-        if name.startswith(f'_{class_name}__'):
-            continue
-        return name, method
-    raise Exception("No valid method found in Solution class.")
+    method_name = getattr(solution, '__solution_method__', None)
+    if not method_name:
+        raise Exception("__solution_method__ attribute not found in Solution class.")
+
+    method = getattr(solution, method_name, None)
+    if not callable(method):
+        raise Exception(f"Method '{method_name}' not found or not callable in Solution class.")
+
+    return method_name, method
 
 
 def get_arguments(method):

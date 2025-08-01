@@ -1,0 +1,13 @@
+Index: questions/118.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/questions/118.py b/questions/118.py
+new file mode 100644
+--- /dev/null	(date 1754012854322)
++++ b/questions/118.py	(date 1754012854322)
+@@ -0,0 +1,2 @@
++class Solution:
++    def 
+\ No newline at end of file
