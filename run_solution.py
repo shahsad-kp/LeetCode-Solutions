@@ -62,8 +62,12 @@ def run_automatic(method, test_cases):
     print(f"\nRunning {len(test_cases)} test case(s)...")
     passed = 0
     for idx, case in enumerate(test_cases, 1):
-        args = case.get("input", [])
+        raw_args = case.get("input", [])
         expected = case.get("output")
+
+        args = raw_args() if callable(raw_args) else raw_args
+        expected = expected() if callable(expected) else expected
+
         original_args = copy.deepcopy(args)
         try:
             result = method(*args)
@@ -74,7 +78,8 @@ def run_automatic(method, test_cases):
                 print(f"❌ Test {idx}: Failed. Input: {original_args}, Expected: {expected}, Got: {result}")
         except Exception as e:
             print(f"💥 Test {idx}: Exception occurred: {e}")
-    print(f"\n{passed}/{len(test_cases)} test cases passed.")
+
+    print(f"\n{passed}/{len(test_cases)} test case(s) passed.")
 
 
 def parse_args():
