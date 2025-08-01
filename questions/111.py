@@ -46,6 +46,7 @@ class Solution:
             'output': 5
         }
     ]
+    __solution_method__ = 'minDepth'
 
     def minDepth(self, root: Optional[TreeNode]) -> int:
         return self.get_depth(root, 0)

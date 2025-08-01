@@ -45,6 +45,7 @@ class Solution:
             'output': ListNode(0, ListNode(0, ListNode(0, ListNode(1))))
         }
     ]
+    __solution_method__ = 'addTwoNumbers'
 
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         head = result = None

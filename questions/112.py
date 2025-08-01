@@ -59,6 +59,7 @@ class Solution:
             'output': False
         }
     ]
+    __solution_method__ = 'hasPathSum'
 
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         if not root:

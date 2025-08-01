@@ -42,6 +42,7 @@ class Solution:
             'output': [1, 2, 3, 4, 5, 6]
         }
     ]
+    __solution_method__ = 'merge'
 
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> List[int]:
         """

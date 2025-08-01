@@ -26,6 +26,7 @@ class Solution:
             ]
         }
     ]
+    __solution_method__ = 'generate'
 
     def generate(self, numRows: int) -> List[List[int]]:
         triangle = []

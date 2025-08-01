@@ -23,6 +23,7 @@ class Solution:
             'output': True
         }
     ]
+    ____solution_method__ = 'isPalindrome'
 
     def isPalindrome(self, x: int) -> bool:
         if x < 0:

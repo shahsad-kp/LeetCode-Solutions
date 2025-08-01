@@ -75,6 +75,7 @@ class Solution:
             'output': 20
         }
     ]
+    __solution_method__ = 'maxSum'
 
     def maxSum(self, nums: List[int]) -> int:
         seen = set()

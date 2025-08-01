@@ -44,6 +44,7 @@ class Solution:
             'output': False
         }
     ]
+    __solution_method__ = 'isSameTree'
 
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if not p and not q:

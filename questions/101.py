@@ -29,6 +29,7 @@ class Solution:
             'output': False
         }
     ]
+    __solution_method__ = 'isSymmetric'
 
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         def is_symmetric(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:

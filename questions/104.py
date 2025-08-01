@@ -29,6 +29,7 @@ class Solution:
             'output': 1
         }
     ]
+    __solution_method__ = 'maxDepth'
 
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if root is None:
