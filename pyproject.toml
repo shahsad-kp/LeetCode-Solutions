@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "leetcode - solutions"
+version = "0.1.0"
+description = ""
+authors = ["Shahsad KP <shahsadkpklr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+run-leetcode-solutions = {git = "https://github.com/shahsad-kp/run-leetcode-solutions.git", rev = "v0.1.2"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
