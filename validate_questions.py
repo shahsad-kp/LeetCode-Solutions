@@ -35,14 +35,16 @@ def update_readme():
 
         title = sol.title
         link = sol.leetcode_link
-        table_lines.append(f"| {i} | {qnum} | {title} | [Link]({link}) | [Solutions](questions/{f}) |")
+        valid, _ = validate_question_file(os.path.join(QUESTIONS_DIR, f))
+
+        table_lines.append(f"| {i} | {qnum} | {title} | [Link]({link}) | [Solutions](questions/{f}) | {valid} |")
 
     with open(README_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
     new_table = "\n".join([
-        "| # | LeetCode Number | Title | LeetCode Link | Solutions |",
-        "|---|-----------------|-------|---------------|-----------|",
+        "| # | LeetCode Number | Title | LeetCode Link | Solutions | Is Passed |",
+        "|---|-----------------|-------|---------------|-----------|-----------|",
         *table_lines
     ])
 
@@ -57,16 +59,5 @@ def update_readme():
 
 
 if __name__ == "__main__":
-    all_valid = True
-    for file in os.listdir(QUESTIONS_DIR):
-        if file.endswith(".py"):
-            valid, msg = validate_question_file(os.path.join(QUESTIONS_DIR, file))
-            if not valid:
-                print(f"❌ {file}: {msg}")
-                all_valid = False
-    if not all_valid:
-        exit(1)
-
-    print("✅ All questions valid.")
     update_readme()
     print("✅ README updated.")
