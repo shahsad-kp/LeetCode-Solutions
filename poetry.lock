@@ -2,7 +2,7 @@
 
 [[package]]
 name = "run-leetcode-solutions"
-version = "0.1.0"
+version = "1.1.6"
 description = ""
 optional = false
 python-versions = "^3.12"
@@ -12,10 +12,10 @@ develop = false
 [package.source]
 type = "git"
 url = "https://github.com/shahsad-kp/run-leetcode-solutions.git"
-reference = "v1.1.4"
-resolved_reference = "c915208cf8f90c35ff7f87df0196b3544573dd64"
+reference = "HEAD"
+resolved_reference = "784288367c86b9abc8a8eb586b4d8dc5eaf24efb"
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "c1e5cca64cc826c25d25bc2461beb6f578c6b2838777678b5a45af7a601129c9"
+content-hash = "cd15e2f27416d7a77929e2b029c853e7f2233cc7cba2440fdb3d2a7c3154a997"

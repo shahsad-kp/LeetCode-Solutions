@@ -3,6 +3,8 @@ import importlib.util
 import inspect
 import re
 
+from run_leetcode_solutions.base_solution import BaseSolution
+
 QUESTIONS_DIR = "questions"
 README_FILE = "README.md"
 
@@ -14,23 +16,8 @@ def validate_question_file(filepath):
     if not hasattr(module, "Solution"):
         return False, "Missing Solution class"
 
-    sol = module.Solution()
-
-    if not hasattr(sol, "__question__"):
-        return False, "Missing __question__ attribute"
-    if not hasattr(sol, "__leetcode__"):
-        return False, "Missing __leetcode__ attribute"
-    if not hasattr(sol, "__test_cases__"):
-        return False, "Missing __test_cases__ attribute"
-    if not isinstance(sol.__test_cases__, list):
-        return False, "__test_cases__ must be a list"
-
-    method_count = sum(
-        1 for name, _ in inspect.getmembers(sol, predicate=inspect.ismethod)
-        if not name.startswith("__")
-    )
-    if method_count == 0:
-        return False, "No solution method found"
+    sol: BaseSolution = module.Solution()
+    return sol.run_automatic()
 
     return True, None
 
@@ -42,10 +29,10 @@ def update_readme():
         spec = importlib.util.spec_from_file_location("module", os.path.join(QUESTIONS_DIR, f))
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        sol = module.Solution()
+        sol: BaseSolution = module.Solution()
 
-        title = sol.__question__
-        link = sol.__leetcode__
+        title = sol.title
+        link = sol.leetcode_link
         table_lines.append(f"| {i} | {qnum} | {title} | [Link]({link}) | [Solutions](questions/{f}) |")
 
     with open(README_FILE, "r", encoding="utf-8") as f:

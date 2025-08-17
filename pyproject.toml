@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-run-leetcode-solutions = {git = "https://github.com/shahsad-kp/run-leetcode-solutions.git", rev = "v1.1.4"}
+run-leetcode-solutions = {git = "https://github.com/shahsad-kp/run-leetcode-solutions.git"}
 
 
 [build-system]
