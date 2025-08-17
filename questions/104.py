@@ -1,8 +1,8 @@
 from typing import Optional
 
-from base_solution import BaseSolution
-from test_cases import TestCases
-from test_value import TestValue
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
 
 
 class TreeNode:

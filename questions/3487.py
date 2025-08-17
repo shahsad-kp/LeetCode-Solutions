@@ -39,42 +39,46 @@ Constraints:
 """
 from typing import List
 
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
 
-class Solution:
-    __question__ = 'Maximum Unique Subarray Sum After Deletions'
-    __leetcode__ = 'https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion'
-    __test_cases__ = [
-        {
-            'input': [
+
+class Solution(BaseSolution):
+    title = 'Maximum Unique Subarray Sum After Deletions'
+    leetcode_link = 'https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion'
+    automatic_tests = TestCases(
+        TestValue(
+            inputs= [
                 [1, 2, 3, 4, 5]
             ],
-            'output': 15
-        },
-        {
-            'input': [
+            expected= 15
+        ),
+        TestValue(
+            inputs= [
                 [1, 1, 0, 1, 1]
             ],
-            'output': 1
-        },
-        {
-            'input': [
+            expected= 1
+        ),
+        TestValue(
+            inputs= [
                 [1, 2, -1, -2, 1, 0, -1]
             ],
-            'output': 3
-        },
-        {
-            'input': [
+            expected= 3
+        ),
+        TestValue(
+            inputs= [
                 [-100]
             ],
-            'output': -100
-        },
-        {
-            'input': [
+            expected= -100
+        ),
+        TestValue(
+            inputs= [
                 [-20,20]
             ],
-            'output': 20
-        }
-    ]
+            expected= 20
+    )
+    )
     __solution_method__ = 'maxSum'
 
     def maxSum(self, nums: List[int]) -> int:

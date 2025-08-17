@@ -1,20 +1,23 @@
 from typing import List
 
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
 
-class Solution:
-    __question__ = 'Best Time to Buy and Sell Stock'
-    __leetcode__ = 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock'
+class Solution(BaseSolution):
+    title = 'Best Time to Buy and Sell Stock'
+    leetcode_link = 'https://leetcode.com/problems/best-time-to-buy-and-sell-stock'
     __solution_method__ = 'maxProfit'
-    __test_cases__ = [
-        {
-            'input': [[7, 1, 5, 3, 6, 4]],
-            'output': 5
-        },
-        {
-            'input': [[7,6,4,3,1]],
-            'output': 0
-        }
-    ]
+    automatic_tests = TestCases(
+        TestValue(
+            inputs= [[7, 1, 5, 3, 6, 4]],
+            expected= 5
+        ),
+        TestValue(
+            inputs= [[7,6,4,3,1]],
+            expected= 0
+        )
+    )
 
     def maxProfit(self, prices: List[int]) -> int:
         min_price = None

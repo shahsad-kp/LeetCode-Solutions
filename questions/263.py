@@ -1,21 +1,26 @@
-class Solution:
-    __question__ = 'Ugly Number'
-    __leetcode__ = 'https://leetcode.com/problems/ugly-number'
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
+
+
+class Solution(BaseSolution):
+    title = 'Ugly Number'
+    leetcode_link = 'https://leetcode.com/problems/ugly-number'
     __solution_method__ = 'isUgly'
-    __test_cases__ = [
-        {
-            'input': [6],
-            'output': True
-        },
-        {
-            'input': [1],
-            'output': True
-        },
-        {
-            'input': [14],
-            'output': False
-        }
-    ]
+    automatic_tests = TestCases(
+        TestValue(
+            inputs=[6],
+            expected=True
+        ),
+        TestValue(
+            inputs=[1],
+            expected=True
+        ),
+        TestValue(
+            inputs=[14],
+            expected=False
+        ),
+    )
 
     def isUgly(self, n: int) -> bool:
         if n <= 0:

@@ -1,21 +1,26 @@
-class Solution:
-    __question__ = 'Add Digits'
-    __leetcode__ = 'https://leetcode.com/problems/add-digits'
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
+
+
+class Solution(BaseSolution):
+    title = 'Add Digits'
+    leetcode_link = 'https://leetcode.com/problems/add-digits'
     __solution_method__ = 'addDigits'
-    __test_cases__ = [
-        {
-            'input': [38],
-            'output': 2
-        },
-        {
-            'input': [0],
-            'output': 0
-        },
-        {
-            'input': [10],
-            'output': 11
-        }
-    ]
+    automatic_tests = TestCases(
+        TestValue(
+            inputs=[38],
+            expected=2
+        ),
+        TestValue(
+            inputs=[0],
+            expected=0
+        ),
+        TestValue(
+            inputs=[10],
+            expected=11
+        )
+    )
 
     def addDigits(self, num: int) -> int:
         while num >= 10:

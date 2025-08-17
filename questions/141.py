@@ -1,5 +1,9 @@
 from typing import Optional
 
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
+
 
 class ListNode:
     def __init__(self, x):
@@ -18,6 +22,7 @@ def generate_input_one() -> list[ListNode]:
     fourth_node.next = second_node
     return [first_node]
 
+
 def generate_input_two() -> list[ListNode]:
     first_node = ListNode(1)
     second_node = ListNode(2)
@@ -26,23 +31,23 @@ def generate_input_two() -> list[ListNode]:
     return [first_node]
 
 
-class Solution:
-    __question__ = 'Linked List Cycle'
-    __leetcode__ = 'https://leetcode.com/problems/linked-list-cycle'
-    __test_cases__ = [
-        {
-            'input': generate_input_one,
-            'output': True,
-        },
-        {
-            'input': generate_input_two,
-            'output': True,
-        },
-        {
-            'input': [ListNode(1)],
-            'output': False,
-        }
-    ]
+class Solution(BaseSolution):
+    title = 'Linked List Cycle'
+    leetcode_link = 'https://leetcode.com/problems/linked-list-cycle'
+    automatic_tests = TestCases(
+        TestValue(
+            inputs=generate_input_one,
+            expected=True,
+        ),
+        TestValue(
+            inputs=generate_input_two,
+            expected=True,
+        ),
+        TestValue(
+            inputs=[ListNode(1)],
+            expected=False,
+        )
+    )
     __solution_method__ = 'hasCycle'
 
     def hasCycle(self, head: Optional[ListNode]) -> bool:

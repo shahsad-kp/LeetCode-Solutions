@@ -1,13 +1,18 @@
-class Solution:
-    __question__ = 'Valid Palindrome'
-    __leetcode__ = 'https://leetcode.com/problems/valid-palindrome'
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
+
+
+class Solution(BaseSolution):
+    title = 'Valid Palindrome'
+    leetcode_link = 'https://leetcode.com/problems/valid-palindrome'
     __solution_method__ = 'isPalindrome'
-    __test_cases__ = [
-        {
-            'input': ["A man, a plan, a canal: Panama"],
-            'output': True
-        }
-    ]
+    automatic_tests = TestCases(
+        TestValue(
+            inputs=["A man, a plan, a canal: Panama"],
+            expected=True
+        )
+    )
 
     def isPalindrome(self, s: str) -> bool:
         string_length = len(s)

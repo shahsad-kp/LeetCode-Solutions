@@ -1,24 +1,27 @@
 from typing import List
 
+from run_leetcode_solutions.base_solution import BaseSolution
+from run_leetcode_solutions.test_cases import TestCases
+from run_leetcode_solutions.test_value import TestValue
 
-class Solution:
-    __question__ = 'Majority Element'
-    __leetcode__ = 'https://leetcode.com/problems/majority-element'
+class Solution(BaseSolution):
+    title = 'Majority Element'
+    leetcode_link = 'https://leetcode.com/problems/majority-element'
     __solution_method__ = 'majorityElement'
-    __test_cases__ = [
-        {
-            'input': [
+    automatic_tests = TestCases(
+        TestValue(
+            inputs= [
                 [3, 2, 3]
             ],
-            'output': 3
-        },
-        {
-            'input': [
+            expected= 3
+        ),
+        TestValue(
+            inputs= [
                 [2, 2, 1, 1, 1, 2, 2]
             ],
-            'output': 2
-        }
-    ]
+            expected= 2
+        )
+    )
 
     def majorityElement(self, nums: List[int]) -> int:
         element_exists = {}
