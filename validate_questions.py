@@ -1,12 +1,12 @@
-import os
 import importlib.util
-import inspect
+import os
 import re
 
 from run_leetcode_solutions.base_solution import BaseSolution
 
 QUESTIONS_DIR = "questions"
 README_FILE = "README.md"
+
 
 def validate_question_file(filepath):
     spec = importlib.util.spec_from_file_location("module", filepath)
@@ -17,9 +17,11 @@ def validate_question_file(filepath):
         return False, "Missing Solution class"
 
     sol: BaseSolution = module.Solution()
-    return sol.run_automatic()
+    if sol.run_automatic():
+        return True, "Success"
+    else:
+        return False, "Failure"
 
-    return True, None
 
 def update_readme():
     files = sorted([f for f in os.listdir(QUESTIONS_DIR) if f.endswith(".py")])
@@ -52,6 +54,7 @@ def update_readme():
 
     with open(README_FILE, "w", encoding="utf-8") as f:
         f.write(updated)
+
 
 if __name__ == "__main__":
     all_valid = True
