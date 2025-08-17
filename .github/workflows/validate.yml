@@ -23,8 +23,17 @@ jobs:
         with:
           python-version: "3.10"
 
+      - name: Install Poetry
+        run: curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Add Poetry to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+
       - name: Validate questions and update readme
-        run: python validate_questions.py
+        run: poetry run python validate_questions.py
 
       - name: Commit and push updated readme
         if: success()
