@@ -40,6 +40,7 @@ def build_intersecting_lists(a_list, b_list, skip_a, skip_b):
 
 class Solution(BaseSolution):
     __solution_method__ = 'getIntersectionNode'
+    title = 'Intersection of Two Linked Lists'
     automatic_tests = TestCases(
         TestValue(
             inputs=[
@@ -48,6 +49,7 @@ class Solution(BaseSolution):
             expected=8
         )
     )
+    leetcode_link = 'https://leetcode.com/problems/intersection-of-two-linked-lists'
 
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
         a_list = []
