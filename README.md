@@ -75,14 +75,15 @@ class Solution:
 | 10 | 141 | Linked List Cycle | [Link](https://leetcode.com/problems/linked-list-cycle) | [Solutions](questions/141.py) | False |
 | 11 | 144 | Binary Tree Preorder Traversal | [Link](https://leetcode.com/problems/binary-tree-preorder-traversal) | [Solutions](questions/144.py) | True |
 | 12 | 145 | Binary Tree Postorder Traversal | [Link](https://leetcode.com/problems/binary-tree-postorder-traversal) | [Solutions](questions/145.py) | True |
-| 13 | 168 | Excel Sheet Column Title | [Link](https://leetcode.com/problems/excel-sheet-column-title) | [Solutions](questions/168.py) | True |
-| 14 | 169 | Majority Element | [Link](https://leetcode.com/problems/majority-element) | [Solutions](questions/169.py) | True |
-| 15 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) | True |
-| 16 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | False |
-| 17 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | True |
-| 18 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | True |
-| 19 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | True |
-| 20 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | True |
+| 13 | 160 | Intersection of Two Linked Lists | [Link](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solutions](questions/160.py) | True |
+| 14 | 168 | Excel Sheet Column Title | [Link](https://leetcode.com/problems/excel-sheet-column-title) | [Solutions](questions/168.py) | True |
+| 15 | 169 | Majority Element | [Link](https://leetcode.com/problems/majority-element) | [Solutions](questions/169.py) | True |
+| 16 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) | True |
+| 17 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | False |
+| 18 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | True |
+| 19 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | True |
+| 20 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | True |
+| 21 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | True |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
