@@ -79,12 +79,13 @@ class Solution:
 | 14 | 160 | Intersection of Two Linked Lists | [Link](https://leetcode.com/problems/intersection-of-two-linked-lists) | [Solutions](questions/160.py) | True |
 | 15 | 168 | Excel Sheet Column Title | [Link](https://leetcode.com/problems/excel-sheet-column-title) | [Solutions](questions/168.py) | True |
 | 16 | 169 | Majority Element | [Link](https://leetcode.com/problems/majority-element) | [Solutions](questions/169.py) | True |
-| 17 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) | True |
-| 18 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | False |
-| 19 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | True |
-| 20 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | True |
-| 21 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | True |
-| 22 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | True |
+| 17 | 171 | Excel Sheet Column Number | [Link](https://leetcode.com/problems/excel-sheet-column-number) | [Solutions](questions/171.py) | True |
+| 18 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) | True |
+| 19 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | False |
+| 20 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | True |
+| 21 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | True |
+| 22 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | True |
+| 23 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | True |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
