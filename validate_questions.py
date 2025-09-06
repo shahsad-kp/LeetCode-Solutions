@@ -37,7 +37,7 @@ def update_readme():
         link = sol.leetcode_link
         valid, _ = validate_question_file(os.path.join(QUESTIONS_DIR, f))
 
-        table_lines.append(f"| {i} | {qnum} | {title} | [Link]({link}) | [Solutions](questions/{f}) | {valid} |")
+        table_lines.append(f"| {i} | {qnum} | {title} | [Link]({link}) | [Solutions](questions/{f}) | {'✅' if valid else '❌'} |")
 
     with open(README_FILE, "r", encoding="utf-8") as f:
         content = f.read()
