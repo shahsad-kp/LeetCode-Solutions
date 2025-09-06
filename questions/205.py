@@ -18,6 +18,13 @@ class Solution(BaseSolution):
         TestValue(
             inputs=["paper", "title"],
             expected=True
+        ),
+        TestValue(
+            inputs=[
+                "abcdefghijkaa",
+                "abcdefghijaak",
+            ],
+            expected=False
         )
     )
     __solution_method__ = 'isIsomorphic'
@@ -42,5 +49,5 @@ class Solution(BaseSolution):
                 replace = str(top_char + 1)
                 top_char += 1
                 replaces[char] = replace
-            pattern += replace
+            pattern += f" {replace}"
         return pattern
