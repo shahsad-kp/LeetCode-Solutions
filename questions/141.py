@@ -4,11 +4,7 @@ from run_leetcode_solutions.base_solution import BaseSolution
 from run_leetcode_solutions.test_cases import TestCases
 from run_leetcode_solutions.test_value import TestValue
 
-
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from helpers import ListNode
 
 
 def generate_input_one() -> list[ListNode]:

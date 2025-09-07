@@ -4,12 +4,7 @@ from run_leetcode_solutions.base_solution import BaseSolution
 from run_leetcode_solutions.test_cases import TestCases
 from run_leetcode_solutions.test_value import TestValue
 
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+from helpers import TreeNode
 
 
 class Solution(BaseSolution):

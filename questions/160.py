@@ -1,18 +1,13 @@
-from typing import Optional, List
+from typing import Optional
 
 from run_leetcode_solutions.base_solution import BaseSolution
 from run_leetcode_solutions.test_cases import TestCases
 from run_leetcode_solutions.test_value import TestValue
 
-
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from helpers import ListNode
 
 
 def build_intersecting_lists(a_list, b_list, skip_a, skip_b):
-    # Build list A
     headA = ListNode(a_list[0])
     currA = headA
     nodesA = [headA]
@@ -38,13 +33,14 @@ def build_intersecting_lists(a_list, b_list, skip_a, skip_b):
 
     return headA, headB
 
+
 class Solution(BaseSolution):
     __solution_method__ = 'getIntersectionNode'
     title = 'Intersection of Two Linked Lists'
     automatic_tests = TestCases(
         TestValue(
             inputs=[
-                *build_intersecting_lists(a_list=[4,1,8,4,5], b_list=[5,6,1,8,4,5], skip_a=2, skip_b=3),
+                *build_intersecting_lists(a_list=[4, 1, 8, 4, 5], b_list=[5, 6, 1, 8, 4, 5], skip_a=2, skip_b=3),
             ],
             expected=8
         )
