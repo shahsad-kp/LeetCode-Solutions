@@ -4,7 +4,7 @@ from run_leetcode_solutions.base_solution import BaseSolution
 from run_leetcode_solutions.test_cases import TestCases
 from run_leetcode_solutions.test_value import TestValue
 
-from helpers import list_to_tree
+from helpers import list_to_tree, TreeNode
 
 
 class Solution(BaseSolution):
