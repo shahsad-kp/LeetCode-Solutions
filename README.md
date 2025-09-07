@@ -85,11 +85,12 @@ class Solution:
 | 20 | 217 | Contains Duplicate | [Link](https://leetcode.com/problems/contains-duplicate) | [Solutions](questions/217.py) | ✅ |
 | 21 | 226 | Invert Binary Tree | [Link](https://leetcode.com/problems/invert-binary-tree) | [Solutions](questions/226.py) | ✅ |
 | 22 | 228 | Summary Ranges | [Link](https://leetcode.com/problems/summary-ranges) | [Solutions](questions/228.py) | ✅ |
-| 23 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | ❌ |
-| 24 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | ✅ |
-| 25 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | ✅ |
-| 26 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | ✅ |
-| 27 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | ✅ |
+| 23 | 242 | Valid Anagram | [Link](https://leetcode.com/problems/valid-anagram) | [Solutions](questions/242.py) | ✅ |
+| 24 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | ❌ |
+| 25 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | ✅ |
+| 26 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | ✅ |
+| 27 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | ✅ |
+| 28 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | ✅ |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
