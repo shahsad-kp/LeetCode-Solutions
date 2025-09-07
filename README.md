@@ -83,11 +83,12 @@ class Solution:
 | 18 | 2 | Add Two Numbers | [Link](https://leetcode.com/problems/add-two-numbers) | [Solutions](questions/2.py) | ✅ |
 | 19 | 205 | Isomorphic Strings | [Link](https://leetcode.com/problems/isomorphic-strings) | [Solutions](questions/205.py) | ✅ |
 | 20 | 217 | Contains Duplicate | [Link](https://leetcode.com/problems/contains-duplicate) | [Solutions](questions/217.py) | ✅ |
-| 21 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | ❌ |
-| 22 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | ✅ |
-| 23 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | ✅ |
-| 24 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | ✅ |
-| 25 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | ✅ |
+| 21 | 226 | Invert Binary Tree | [Link](https://leetcode.com/problems/invert-binary-tree) | [Solutions](questions/226.py) | ✅ |
+| 22 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | ❌ |
+| 23 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | ✅ |
+| 24 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | ✅ |
+| 25 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | ✅ |
+| 26 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | ✅ |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
