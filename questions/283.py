@@ -16,13 +16,19 @@ class Solution(BaseSolution):
         TestValue(
             inputs=[[0]],
             expected=[0]
+        ),
+        TestValue(
+            inputs=[[0, 0, 1]],
+            expected=[1, 0, 0]
         )
     )
     __solution_method__ = 'moveZeroes'
 
     def moveZeroes(self, nums: List[int]) -> List[int]:
-        for i in range(len(nums)):
+        for i in range(len(nums) - 1):
             if nums[i] == 0:
-                for j in range(i, len(nums) - 1):
-                    nums[j], nums[j + 1] = nums[j + 1], nums[j]
+                j = i
+                while j < len(nums) - 1 and nums[j] == 0:
+                    j += 1
+                nums[i], nums[j] = nums[j], nums[i]
         return nums
