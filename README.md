@@ -90,9 +90,10 @@ class Solution:
 | 25 | 258 | Add Digits | [Link](https://leetcode.com/problems/add-digits) | [Solutions](questions/258.py) | ❌ |
 | 26 | 263 | Ugly Number | [Link](https://leetcode.com/problems/ugly-number) | [Solutions](questions/263.py) | ✅ |
 | 27 | 268 | Missing Numbers | [Link](https://leetcode.com/problems/missing-number) | [Solutions](questions/268.py) | ✅ |
-| 28 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | ✅ |
-| 29 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | ✅ |
-| 30 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | ✅ |
+| 28 | 283 | Move Zeroes | [Link](https://leetcode.com/problems/move-zeroes) | [Solutions](questions/283.py) | ✅ |
+| 29 | 3487 | Maximum Unique Subarray Sum After Deletions | [Link](https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion) | [Solutions](questions/3487.py) | ✅ |
+| 30 | 88 | Merge Sorted Array | [Link](https://leetcode.com/problems/merge-sorted-array) | [Solutions](questions/88.py) | ✅ |
+| 31 | 9 | Palindrome Number | [Link](https://leetcode.com/problems/palindrome-number) | [Solutions](questions/9.py) | ✅ |
 
 ## 🧪 Test Case Format
 Each test case should be a dict like:
