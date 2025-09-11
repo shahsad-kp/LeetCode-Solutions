@@ -51,3 +51,13 @@ def list_to_tree(data):
         i += 1
 
     return root
+
+def list_to_linked_list(data: list):
+    if not data:
+        return None
+    head = ListNode(data[0])
+    current = head
+    for i in range(1, len(data)):
+        current.next = ListNode(data[i])
+        current = current.next
+    return head
